@@ -39,7 +39,7 @@ export const myStyle = makeStyle((el) => {
 export const MyView = from.View((el) => {
   el.children((c) => {
     if (c.type == 'Text') {
-      c.cascade.style.set('color', 'green');
+      c.style.set('color', 'green');
     }
   });
 });
@@ -66,7 +66,7 @@ const Foo = () => {
       </W>
 
       <MyView>
-        <Text>{"I'm Fine, thanks. And you?"}</Text>
+        <Text>I'm Green</Text>
       </NyView>
     </Root>
   );
