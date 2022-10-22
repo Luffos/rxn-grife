@@ -4,11 +4,8 @@ Programmatic Styling Library for React and React Native 🎀
 ### styles.ts
 ```typescript
 import { makeStyle } from 'rxn-grife';
-import { useUnits } from 'rxn-units';
 
  export const s = makeStyle((el) => {
-  
-    const { vmin } = useUnits();
 
     if (el.type == 'View') {
       el.style.set('backgroundColor', 'blue');
