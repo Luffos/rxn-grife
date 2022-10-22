@@ -1,5 +1,5 @@
 # rxn-grife
-Styling Library (with Selectors) for React and React Native 🎀
+Programmatic Styling Library for React and React Native 🎀
 
 ```typescript
 import React, {useCallback} from 'react';
@@ -9,9 +9,10 @@ const Foo = () => {
   const style = mapStyle((el) => {
     if (el.type == 'View') {
       el.style.set('backgroundColor', 'blue');
-      el.style.setDomino('color', 'white');
 
       el.children((c) => {
+        c.recursive.style.set('color', 'white');
+
         if (c.type == 'View') {
           c.style.flex_JCC(); //Justify Content Center if Flex
           c.style.flex_AIC(); //Align Items Center if Flex
