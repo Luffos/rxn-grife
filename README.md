@@ -1,12 +1,15 @@
 # rxn-grife
 Programmatic Styling Library for React and React Native 🎀
 
+### styles.ts
 ```typescript
-import React, {useCallback} from 'react';
-import {mapStyle, View, Text} from 'grife';
+import { makeStyle } from 'rxn-grife';
+import { useUnits } from 'rxn-units';
 
-const Foo = () => {
-  const style = mapStyle((el) => {
+ export const s = makeStyle((el) => {
+  
+    const { vmin } = useUnits();
+
     if (el.type == 'View') {
       el.style.set('backgroundColor', 'blue');
 
@@ -24,10 +27,19 @@ const Foo = () => {
         }
       });
     }
-  }, []);
+  });
+```
+
+### index.tsx
+```typescript
+import React, { useCallback } from 'react';
+import { View, Text } from 'rxn-grife';
+import { s } from './styles.ts';
+
+const Foo = () => {
 
   return (
-    <View style={style}>
+    <View style={s}>
       <View>
         <Text className={'mt'}>Hello World</Text>
       </View>
