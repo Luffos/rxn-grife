@@ -11,7 +11,7 @@ const Foo = () => {
       el.style.set('backgroundColor', 'blue');
 
       el.children((c) => {
-        c.recursive.style.set('color', 'white');
+        c.cascade.style.set('color', 'white');
 
         if (c.type == 'View') {
           c.style.flex_JCC(); //Justify Content Center if Flex
