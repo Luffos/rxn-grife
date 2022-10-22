@@ -6,19 +6,21 @@ import React, {useCallback} from 'react';
 import {mapStyle, View, Text} from 'grife';
 
 const Foo = () => {
+  const style = mapStyle((el) => {
+    if (el.type == 'View') {
+      el.style.set('backgroundColor', 'blue');
+      el.style.setDomino('color', 'white');
 
-  const style = mapStyle((e) => {
-    if (e.target.typeEquals.View()) {
-      e.target.style.set.color('blue');
-      e.target.style.setDomino.color('white');
+      el.children((c) => {
+        if (c.type == 'View') {
+          c.style.flex_JCC(); //Justify Content Center if Flex
+          c.style.flex_AIC(); //Align Items Center if Flex
+          //  or c.style.flex_JCC_AIC(); or c.style.flex_AIC_JCC();
 
-      e.target.query.childrenOfType.View((childrenView) => {
-        childrenView.style.flex_JCC(); //Justify Content Center if Flex
-        childrenView.style.flex_AIC(); //Align Items Center if Flex
-
-        if (childrenView.index.isFirst()) childrenView.style.set.marginLeft(4);
-        if (childrenView.index.isLast()) childrenView.style.set.marginRight(4);
-        if (childrenView.index.isOddly()) childrenView.style.set.marginRight(4);
+          if (c.index.isFirst()) c.style.set('marginLeft', 4); // or c.index.value === 0
+          if (c.index.isLast()) c.style.set('marginRight', 4);
+          if (c.index.isOddly()) c.style.set('marginRight', 4);
+        }
       });
     }
   }, []);
