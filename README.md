@@ -29,10 +29,10 @@ const Foo = () => {
   return (
     <View style={style}>
       <View>
-        <Text classes={['mt']}>Hello World</Text>
+        <Text className={'mt'}>Hello World</Text>
       </View>
       <View>
-        <Text classes={['mt']}>Hello World</Text>
+        <Text className={'mt'}>Hello World 2</Text>
       </View>
     </View>
   );
