@@ -1,5 +1,5 @@
 # rxn-grife
-Programmatic Styling Library for React and React Native 🎀
+🎀 Programmatic Styling Library for React and React Native
 
 ### styles.ts
 ```typescript
