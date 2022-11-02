@@ -3,19 +3,19 @@ import { View, Text } from "react-native";
 
 const makeStyleFrom = (baseElement: any) => {
   console.error(
-    "Not implemented yet. Please, use makeStyleFrom.Component instead. (View | Text)"
+    "makeStyleFrom(?) Not implemented yet. Please, use makeStyleFrom.? instead. (View | Text)"
   );
   return React.Fragment;
 };
 
-makeStyleFrom.View = (el: any) => () =>
+makeStyleFrom.View = (callback: (el: any) => void) => () =>
   React.createElement(
     View,
     { style: { width: 100, height: 100, backgroundColor: `green` } },
     []
   );
 
-makeStyleFrom.Text = (el: any) => () =>
+makeStyleFrom.Text = (callback: (el: any) => void) => () =>
   React.createElement(
     View,
     { style: { width: 100, height: 100, backgroundColor: `green` } },

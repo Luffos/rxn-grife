@@ -1,7 +1,8 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, { useCallback, useEffect, useState } from 'react';
-import { Text, StatusBar, View } from 'react-native';
+import { StatusBar, View } from 'react-native';
 import { A, MyView, C } from './styles';
+import { Text } from 'rxn-grife';
 
 const App = () => {
   return (
@@ -15,9 +16,9 @@ const App = () => {
       }}
     >
       <StatusBar backgroundColor={'gray'} barStyle="light-content" />
-      <Text>Hello World</Text>
-      <A/>
-      <MyView/>
+      <Text className={'c'}>Hello World</Text>
+      <A />
+      <MyView />
       <C />
     </View>
   );
