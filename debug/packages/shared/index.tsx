@@ -4,6 +4,7 @@ import { StatusBar, View } from 'react-native';
 import { A, MyView, C } from './styles';
 import { Text } from 'rxn-grife';
 
+
 const App = () => {
   return (
     <View

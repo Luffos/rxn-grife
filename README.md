@@ -61,8 +61,8 @@ export const MyView = from.View((el) => {
 ### index.tsx
 ```tsx
 import React, { useCallback } from 'react';
-import { View, Text } from 'react-native';
-import { With as W } from 'rxn-grife';
+import { View } from 'react-native';
+import { With as W, Text } from 'rxn-grife';
 import { Root, myStyle } from './styles.ts';
 
 const Foo = () => {
