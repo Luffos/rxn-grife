@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
+import type { Element } from "interfaces/Element";
 
 const makeStyleFrom = (baseElement: any) => {
   console.error(
@@ -8,18 +9,20 @@ const makeStyleFrom = (baseElement: any) => {
   return React.Fragment;
 };
 
-makeStyleFrom.View = (callback: (el: any) => void) => () =>
-  React.createElement(
+makeStyleFrom.View = (callback: (el: Element) => void) => () => {
+  return React.createElement(
     View,
     { style: { width: 100, height: 100, backgroundColor: `green` } },
     []
   );
+};
 
-makeStyleFrom.Text = (callback: (el: any) => void) => () =>
-  React.createElement(
+makeStyleFrom.Text = (callback: (el: Element) => void) => () => {
+  return React.createElement(
     View,
     { style: { width: 100, height: 100, backgroundColor: `green` } },
     []
   );
+};
 
 export default makeStyleFrom;
