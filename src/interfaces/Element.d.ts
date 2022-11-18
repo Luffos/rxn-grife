@@ -1,7 +1,8 @@
   export interface Element {
+    type: string,
     style: {
-      set: (v: string, k?: string) => void;
-      setMultiple: (v: {}) => void;
+      set: (property: string, value?: string) => void;
+      setMultiple: (values: {}) => void;
     };
     children: Array<Element>;
   }

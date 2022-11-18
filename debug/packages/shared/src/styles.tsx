@@ -11,7 +11,7 @@ export const A = from.View((el) => {
 });
 
 export const MyView = from.Text((el) => {
-  el.children.map((c: any) => {
+  el.children.map((c) => {
     if (c.type == 'Text') {
       c.style.set('color', 'green');
     }

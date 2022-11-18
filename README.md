@@ -32,25 +32,21 @@ export const myStyle = makeStyle((el) => {
   if (el.type == 'View') {
     el.style.set('backgroundColor', 'blue');
 
-    el.children((c) => {
+    el.children.map((c) => {
       c.cascade.style.set('color', 'white');
 
       if (c.type == 'View') {
-        c.style.set({
+        c.style.setMultiple({
           justifyContent: "center",
           alignItems: "center"
         });
-
-        if (c.index.isFirst()) c.style.set('marginLeft', 4); // or c.index.value === 0
-        if (c.index.isLast()) c.style.set('marginRight', 4);
-        if (c.index.isOddly()) c.style.set('marginRight', 4);
       }
     });
   }
 });
 
 export const MyView = from.View((el) => {
-  el.children((c) => {
+  el.children.map((c) => {
     if (c.type == 'Text') {
       c.style.set('color', 'green');
     }
