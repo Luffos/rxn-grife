@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
-import type { Element } from "interfaces/Element";
+import type { Element } from "./interfaces/Element";
 
 const makeStyleFrom = (baseElement: any) => {
   console.error(
