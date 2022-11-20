@@ -1,4 +1,4 @@
-import makeStyleFrom from "./makeStyleFrom";
+import makeStyleFrom from "./functions/makeStyleFrom";
 
 // Components
 import _Text from "./components/Text";
