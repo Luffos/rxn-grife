@@ -2,13 +2,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { View } from 'react-native';
-import { makeStyleFrom as from} from 'rxn-grife';
+import { makeStyle as ms, makeStyleFrom as from } from 'rxn-grife';
 
-//export const C = from(View);
-export const C = from.View((el) => {});
+export const MyStyle = ms((el) => {});
 
-export const A = from.View((el) => {
-});
+//export const MyView1 = from(View);
+export const MyView2 = from.View((el) => {});
+
+export const MyView3 = from.View((el) => {});
 
 export const MyText = from.Text((el) => {
   el.children.map((c) => {

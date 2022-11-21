@@ -2,7 +2,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, { useCallback, useEffect, useState } from 'react';
 import { StatusBar, View } from 'react-native';
-import { A, MyText, C } from './styles';
+import { MyView2, MyText } from './styles';
 import { Text } from 'rxn-grife';
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
         padding: 5,
       }}
     >
-      <MyText>Hello 3</MyText>
+      <MyText>Hello 3<Text>I'm another text</Text></MyText>
     </View>
   );
 };

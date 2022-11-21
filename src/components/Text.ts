@@ -1,11 +1,11 @@
 import React from "react";
 import { Text, TextProps } from "react-native";
 
-export interface iProps extends TextProps {
+export interface _TextProps extends Omit<TextProps, "style"> {
   id?: string;
   className?: string;
-}
+};
 
-const _Text = (props: iProps) => React.createElement(Text, props);
+const _Text = (props: _TextProps) => React.createElement(Text, props);
 
 export default _Text;

@@ -1,6 +1,7 @@
 import React from "react";
-import { StyledFromText, StyledFromView } from "../Styled";
-import type { Element } from "../interfaces/Element";
+import { StyledFromText } from "../handler/macros/Text";
+import { StyledFromView } from "../handler/macros/View";
+import type { Element, ElementCallback } from "../interfaces/Element";
 
 const makeStyleFrom = (baseElement: any) => {
   console.error(
@@ -9,8 +10,8 @@ const makeStyleFrom = (baseElement: any) => {
   return React.Fragment;
 };
 
-makeStyleFrom.View = (callback: (el: Element) => void) => StyledFromView(callback);
+makeStyleFrom.View = (callback: ElementCallback) => StyledFromView(callback);
 
-makeStyleFrom.Text = (callback: (el: Element) => void) => StyledFromText(callback);
+makeStyleFrom.Text = (callback: ElementCallback) => StyledFromText(callback);
 
 export default makeStyleFrom;
