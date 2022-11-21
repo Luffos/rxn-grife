@@ -13,10 +13,10 @@ import { Element } from "./interfaces/Element";
 
 
 class _View extends React.Component<Omit<ViewProps, "style">> {}
-export const StyledFromViewProps = (callback: (el: Element) => void) => Styled(callback) as unknown as typeof _View;
+export const StyledFromView = (callback: (el: Element) => void) => Styled(callback) as unknown as typeof _View;
 
 class _Text extends React.Component<Omit<TextProps, "style">> {}
-export const StyledFromTextProps = (callback: (el: Element) => void) => Styled(callback) as unknown as typeof _Text;
+export const StyledFromText = (callback: (el: Element) => void) => Styled(callback) as unknown as typeof _Text;
 
 // --------------------------------------------
 

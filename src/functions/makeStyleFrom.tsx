@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledFromTextProps, StyledFromViewProps } from "../Styled";
+import { StyledFromText, StyledFromView } from "../Styled";
 import type { Element } from "../interfaces/Element";
 
 const makeStyleFrom = (baseElement: any) => {
@@ -9,8 +9,8 @@ const makeStyleFrom = (baseElement: any) => {
   return React.Fragment;
 };
 
-makeStyleFrom.View = (callback: (el: Element) => void) => StyledFromViewProps(callback);
+makeStyleFrom.View = (callback: (el: Element) => void) => StyledFromView(callback);
 
-makeStyleFrom.Text = (callback: (el: Element) => void) => StyledFromTextProps(callback);
+makeStyleFrom.Text = (callback: (el: Element) => void) => StyledFromText(callback);
 
 export default makeStyleFrom;
