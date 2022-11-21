@@ -1,7 +1,7 @@
 import React from "react";
 import { View, ViewProps } from "react-native";
 
-export interface _ViewProps extends Omit<ViewProps, "style"> {
+export interface _ViewProps extends ViewProps {
   id?: string;
   className?: string;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, TextProps } from "react-native";
 
-export interface _TextProps extends Omit<TextProps, "style"> {
+export interface _TextProps extends TextProps {
   id?: string;
   className?: string;
 };

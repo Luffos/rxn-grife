@@ -16,7 +16,9 @@ const App = () => {
         padding: 5,
       }}
     >
-      <MyText>Hello 3<Text>I'm another text</Text></MyText>
+      <MyText className="po" style={{ color: 'green' }}>
+        Hello 3<Text style={{ color: 'red' }}>I'm another text</Text>
+      </MyText>
     </View>
   );
 };

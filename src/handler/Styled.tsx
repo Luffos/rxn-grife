@@ -1,9 +1,12 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text, View } from "react-native";
 
 import type { ElementCallback } from "../interfaces/Element";
 
-export const Styled = (callback: ElementCallback) =>
+export const Styled = (
+  WrapperElement: any,
+  callback: ElementCallback
+) =>
   class Styled extends React.Component {
     constructor(props: {} | Readonly<{}> | any) {
       super(props);
@@ -11,6 +14,6 @@ export const Styled = (callback: ElementCallback) =>
     }
 
     render(): React.ReactNode {
-      return (this.props as any).children;
+      return <WrapperElement {...this.props}/>;
     }
   };
