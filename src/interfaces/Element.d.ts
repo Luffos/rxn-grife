@@ -1,8 +1,15 @@
 export interface Element {
   type: string;
   style: {
-    set: (property: string, value?: string) => void;
-    setMultiple: (values: {}) => void;
+    set: (
+      ...args:
+        | [string, string | number]
+        | [
+            {
+              a: boolean;
+            }
+          ]
+    ) => void;
   };
   children: Array<Element>;
 }
