@@ -10,7 +10,7 @@ export const C = from.View((el) => {});
 export const A = from.View((el) => {
 });
 
-export const MyView = from.Text((el) => {
+export const MyText = from.Text((el) => {
   el.children.map((c) => {
     if (c.type == 'Text') {
       c.style.set('color', 'green');

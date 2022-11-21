@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { StyledFromTextProps, StyledFromViewProps } from "../Styled";
 import type { Element } from "../interfaces/Element";
 
 const makeStyleFrom = (baseElement: any) => {
@@ -9,20 +9,8 @@ const makeStyleFrom = (baseElement: any) => {
   return React.Fragment;
 };
 
-makeStyleFrom.View = (callback: (el: Element) => void) => () => {
-  return React.createElement(
-    View,
-    { style: { width: 100, height: 100, backgroundColor: `green` } },
-    []
-  );
-};
+makeStyleFrom.View = (callback: (el: Element) => void) => StyledFromViewProps(callback);
 
-makeStyleFrom.Text = (callback: (el: Element) => void) => () => {
-  return React.createElement(
-    View,
-    { style: { width: 100, height: 100, backgroundColor: `green` } },
-    []
-  );
-};
+makeStyleFrom.Text = (callback: (el: Element) => void) => StyledFromTextProps(callback);
 
 export default makeStyleFrom;

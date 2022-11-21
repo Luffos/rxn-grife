@@ -1,7 +1,7 @@
 import React from "react";
-import { View, TextProps } from "react-native";
+import { View, ViewProps } from "react-native";
 
-interface iProps extends TextProps {
+interface iProps extends ViewProps {
   id?: string;
   className?: string;
 }

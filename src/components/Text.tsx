@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, TextProps } from "react-native";
 
-interface iProps extends TextProps {
+export interface iProps extends TextProps {
   id?: string;
   className?: string;
 }

@@ -1,9 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react-native/no-inline-styles */
 import React, { useCallback, useEffect, useState } from 'react';
 import { StatusBar, View } from 'react-native';
-import { A, MyView, C } from './styles';
+import { A, MyText, C } from './styles';
 import { Text } from 'rxn-grife';
-
 
 const App = () => {
   return (
@@ -16,11 +16,7 @@ const App = () => {
         padding: 5,
       }}
     >
-      <StatusBar backgroundColor={'gray'} barStyle="light-content" />
-      <Text className={'c'}>Hello World</Text>
-      <A />
-      <MyView />
-      <C />
+      <MyText>Hello 3</MyText>
     </View>
   );
 };
