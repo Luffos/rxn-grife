@@ -11,6 +11,6 @@ export const Styled = (callback: ElementCallback) =>
     }
 
     render(): React.ReactNode {
-      return <Text>{(this.props as any).children}</Text>;
+      return (this.props as any).children;
     }
   };
