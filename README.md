@@ -36,7 +36,7 @@ export const myStyle = makeStyle((el) => {
       c.cascade.style.set('color', 'white');
 
       if (c.type == 'View') {
-        c.style.setMultiple({
+        c.style.set({
           justifyContent: "center",
           alignItems: "center"
         });
