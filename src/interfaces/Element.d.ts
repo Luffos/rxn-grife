@@ -13,9 +13,7 @@ export interface Element {
     /**
      * Set style for element (x, y) or object ({x1: y1, x2: y2})
      */
-    set: (
-      ...args: IndividualStyle | [ViewStyle | TextStyle | ImageStyle]
-    ) => void;
+    set: (style: ViewStyle | TextStyle | ImageStyle) => void;
   };
   children: Array<Element>;
 }
