@@ -41,9 +41,6 @@ export const Root = from.View((el) => {
 });
 
 export const myStyle = makeStyle((el) => {
-  if (el.type == 'View') {
-    el.style.set({backgroundColor: 'blue');
-
     el.children.map((c) => {
       c.cascade.style.set({color: 'white'});
 
@@ -54,7 +51,6 @@ export const myStyle = makeStyle((el) => {
         });
       }
     });
-  }
 });
 
 export const MyView = from.View((el) => {
