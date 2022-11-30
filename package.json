@@ -1,7 +1,19 @@
 {
   "name": "rxn-grife",
-  "description": "🎀 Programmatic Styling Library for React, React Native and Expo.",
   "version": "0.0.1",
+  "description": "🎀 Programmatic Styling Library for React, React Native and Expo.",
+  "keywords": [
+    "react",
+    "typescript",
+    "react-native",
+    "grife",
+    "react-native-web",
+    "expo",
+    "rxn",
+    "style",
+    "css-in-js",
+    "styled"
+  ],
   "homepage": "https://github.com/Luffos/rxn-grife#readme",
   "bugs": {
     "url": "https://github.com/Luffos/rxn-grife/issues"
