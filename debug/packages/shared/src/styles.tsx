@@ -12,7 +12,7 @@ export const MyView2 = from.View((el) => {});
 export const MyView3 = from.View((el) => {});
 
 export const MyText = from.Text((el) => {
-  el.style.set({ color: 'red' });
+  el.style.set({ color: 'pink' });
 
   el.children.map((c) => {
     if (c.type == 'Text') {
