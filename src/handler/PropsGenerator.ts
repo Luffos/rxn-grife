@@ -1,4 +1,5 @@
 import { cloneDeepWith } from "lodash";
+import childrenToCallback from "../helpers/mapChildrenCallback";
 import { ElementCallback, Element } from "src/interfaces/Element";
 
 export const generateProps = (
@@ -10,13 +11,8 @@ export const generateProps = (
   userCallback({
     style: finalProps.___?.style,
     type: WrapperElement.render.displayName,
-    children:
-      typeof finalProps.children == "object"
-        ? finalProps.children
-            ?.map((a: any) => a.___ ?? undefined)
-            .filter((a: any) => typeof a == "object")
-        : [],
-  } as any);
+    children: childrenToCallback(finalProps.children),
+  } as Element);
   //console.log("finalProps", finalProps);
   return finalProps;
 };
@@ -50,7 +46,7 @@ const recursiveMap = (
     };
   }
 
-  obj.___ = {
+  (obj.___ as Element) = {
     style: {
       set: (style) => {
         if (root) {
@@ -64,10 +60,10 @@ const recursiveMap = (
       },
     },
     type: obj.type?.render?.displayName ?? undefined,
-    children: [...(obj.children ?? obj.props?.children ?? [])]
-      ?.map((a: any) => a.___ ?? undefined)
-      .filter((a: any) => typeof a == "object"),
-  } as Element;
+    children: childrenToCallback([
+      ...(obj.children ?? obj.props?.children ?? {}),
+    ]),
+  };
 
   return obj;
 };
