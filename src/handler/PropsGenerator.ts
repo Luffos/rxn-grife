@@ -9,10 +9,10 @@ export const generateProps = (
   const finalProps = recursiveMap(props, true, userCallback);
   userCallback({
     style: finalProps.___?.style,
-    type: WrapperElement.render.displayName,
+    type: WrapperElement.render?.displayName ?? undefined,
     children: childrenToCallback(finalProps.children),
   } as Element);
-  //console.log("finalProps", finalProps);
+  // console.log("finalProps", finalProps);
   return finalProps;
 };
 
