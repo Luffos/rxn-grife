@@ -1,18 +1,19 @@
 {
-    "compilerOptions": {
-      "baseUrl": ".",
-      "declaration": true,
-      "preserveSymlinks": true,
-      "target": "es6",
-      "module": "ESNext",
-      "jsx": "preserve",
-      "skipLibCheck": true,
-      "allowSyntheticDefaultImports": true,
-      "moduleResolution": "node",
-      "lib": ["es6", "dom"],
-      "esModuleInterop": true,
-      "strict": true,
-      "forceConsistentCasingInFileNames": true,
-    },
-    "include": ["src/"]
-  }
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "build",
+    "declaration": true,
+    "preserveSymlinks": true,
+    "target": "es6",
+    "module": "ESNext",
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "lib": ["es6", "dom"],
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/"]
+}
