@@ -13,6 +13,7 @@ export const generateProps = (
     type: WrapperElement.displayName,
     children: childrenToCallback(finalProps.children),
   } as Element);
+
   // console.log("finalProps", finalProps);
   return finalProps;
 };
@@ -59,7 +60,7 @@ const recursiveMap = (
         }
       },
     },
-    type: obj.type?.displayName ?? undefined,
+    type: obj.type?.displayName ?? obj.type?.name ?? undefined,
     children: childrenToCallback([
       ...(obj.children ?? obj.props?.children ?? {}),
     ]),

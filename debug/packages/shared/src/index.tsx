@@ -1,8 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react-native/no-inline-styles */
 import React, { useCallback, useEffect, useState } from 'react';
-import { StatusBar, View, Text } from 'react-native';
-import { MyView2, MyText, MyText2 } from './styles';
+import { StatusBar, View } from 'react-native';
+import { MyText, MyText2 } from './styles';
+import { Text } from 'rxn-grife';
 
 const App = () => {
   return (
