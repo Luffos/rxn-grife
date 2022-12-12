@@ -1,9 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react-native/no-inline-styles */
 import React, { useCallback, useEffect, useState } from 'react';
-import { StatusBar, View } from 'react-native';
-import { MyView2, MyText } from './styles';
-import { Text } from 'rxn-grife';
+import { StatusBar, View, Text } from 'react-native';
+import { MyView2, MyText, MyText2 } from './styles';
 
 const App = () => {
   return (
@@ -16,9 +15,16 @@ const App = () => {
         padding: 5,
       }}
     >
-      <MyText className="po" style={{ fontSize: 21 }}>
-        Hello 3<Text style={{ color: 'red' }}>I'm another text</Text>
-      </MyText>
+      <MyText>Hello, i'm MyText</MyText>
+      <MyText2 className="po" style={{ fontSize: 21 }}>
+        Hello i'm myText2
+        <Text>
+          I'm João{' '}
+          <Text>
+            I'm Maria <Text>I'm the Witch of the Forest</Text>
+          </Text>
+        </Text>
+      </MyText2>
     </View>
   );
 };

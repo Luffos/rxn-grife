@@ -12,11 +12,21 @@ export const MyView2 = from.View((el) => {});
 export const MyView3 = from.View((el) => {});
 
 export const MyText = from.Text((el) => {
-  el.style.set({ color: 'pink' });
+  el.style.set({ color: 'orange' });
+});
 
-  el.children.map((c) => {
-    if (c.type == 'Text') {
-      c.style.set({ fontSize: 30 });
-    }
+export const MyText2 = from.Text((el) => {
+  el.style.set({ color: 'red' });
+
+  el.children.map((a) => {
+    if (a.type == 'Text') a.style.set({ color: 'purple' });
+
+    a.children?.map((bbb) => {
+      if (bbb.type == 'Text') bbb.style.set({ color: 'yellow' });
+
+      bbb.children?.map((ccc) => {
+        if (ccc.type == 'Text') ccc.style.set({ color: 'brown' });
+      });
+    });
   });
 });
