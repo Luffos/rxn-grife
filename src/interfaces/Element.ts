@@ -8,7 +8,7 @@ type IndividualStyle = Parameters<
 >;
 
 export interface Element {
-  type: string;
+  type: string | undefined;
   style: {
     /**
      * Set style for element (x, y) or object ({x1: y1, x2: y2})

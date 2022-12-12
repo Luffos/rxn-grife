@@ -7,9 +7,10 @@ export const generateProps = (
   userCallback: ElementCallback
 ) => {
   const finalProps = recursiveMap(props, true, userCallback);
+
   userCallback({
     style: finalProps.___?.style,
-    type: WrapperElement.render?.displayName ?? undefined,
+    type: WrapperElement.displayName,
     children: childrenToCallback(finalProps.children),
   } as Element);
   // console.log("finalProps", finalProps);
@@ -58,7 +59,7 @@ const recursiveMap = (
         }
       },
     },
-    type: obj.type?.render?.displayName ?? undefined,
+    type: obj.type?.displayName ?? undefined,
     children: childrenToCallback([
       ...(obj.children ?? obj.props?.children ?? {}),
     ]),

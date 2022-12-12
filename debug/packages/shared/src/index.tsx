@@ -19,9 +19,9 @@ const App = () => {
       <MyText2 className="po" style={{ fontSize: 21 }}>
         Hello i'm myText2
         <Text>
-          I'm João{' '}
+          A
           <Text>
-            I'm Maria <Text>I'm the Witch of the Forest</Text>
+            B <Text>C</Text>
           </Text>
         </Text>
       </MyText2>

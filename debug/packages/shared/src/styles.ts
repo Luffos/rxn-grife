@@ -16,6 +16,7 @@ export const MyText = from.Text((el) => {
 });
 
 export const MyText2 = from.Text((el) => {
+  console.log('el styles', el);
   el.style.set({ color: 'red' });
 
   el.children.map((a) => {
