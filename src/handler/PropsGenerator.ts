@@ -1,5 +1,4 @@
-import { cloneDeepWith } from "lodash";
-import childrenToCallback from "../helpers/mapChildrenCallback";
+import childrenToCallback from "../helpers/childrenToCallback";
 import { ElementCallback, Element } from "src/interfaces/Element";
 
 export const generateProps = (

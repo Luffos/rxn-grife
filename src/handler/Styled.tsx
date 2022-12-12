@@ -1,7 +1,4 @@
-import React, { Children, createElement, createFactory } from "react";
-import { Text, View } from "react-native";
-import type { Element } from "../interfaces/Element";
-import cloneDeep from "lodash/cloneDeep";
+import React from "react";
 
 import type { ElementCallback } from "../interfaces/Element";
 import { generateProps } from "./PropsGenerator";
