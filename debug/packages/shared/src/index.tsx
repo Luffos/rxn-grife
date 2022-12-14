@@ -19,7 +19,7 @@ const App = () => {
       <MyText>Hello, i'm MyText</MyText>
       <MyText2 className="po" style={{ fontSize: 21 }}>
         Hello i'm myText2
-        <Text>
+        <Text id="textA">
           A
           <Text>
             B <Text>C</Text>

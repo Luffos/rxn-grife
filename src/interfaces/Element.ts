@@ -15,6 +15,8 @@ export interface Element {
      */
     set: (style: ViewStyle | TextStyle | ImageStyle) => void;
   };
+  id?: string;
+  className?: string;
   children: Array<Element>;
 }
 

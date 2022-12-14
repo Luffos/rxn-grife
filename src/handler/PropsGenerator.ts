@@ -12,6 +12,8 @@ export const generateProps = (
     style: finalProps.___?.style,
     type: WrapperElement.displayName,
     children: childrenToCallback(finalProps.children),
+    className: props?.className,
+    id: props?.id,
   } as Element);
 
   return finalProps;
@@ -63,6 +65,8 @@ const recursiveMap = (
     children: childrenToCallback([
       ...(obj.children || obj.props?.children || {}),
     ]),
+    className: obj.props?.className,
+    id: obj.props?.id,
   };
 
   return obj;
