@@ -1,11 +1,12 @@
 import React from "react";
-import { Text as _Text, TextProps } from "react-native";
+import { Text, Constructor, NativeMethods, TextProps } from "react-native";
 
 export interface _TextProps extends TextProps {
   id?: string;
   className?: string;
 }
 
-const Text = (props: _TextProps) => <_Text {...props} />;
+class TextComponent extends React.Component<_TextProps> {}
+const _Text = Text as Constructor<NativeMethods> & typeof TextComponent;
 
-export default Text;
+export default _Text;

@@ -1,11 +1,12 @@
 import React from "react";
-import { View as _View, ViewProps } from "react-native";
+import { View, Constructor, NativeMethods, ViewProps } from "react-native";
 
 export interface _ViewProps extends ViewProps {
   id?: string;
   className?: string;
 }
 
-const View = (props: _ViewProps) => <_View {...props} />;
+class ViewComponent extends React.Component<_ViewProps> {}
+const _View = View as Constructor<NativeMethods> & typeof ViewComponent;
 
-export default View;
+export default _View;
