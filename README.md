@@ -114,7 +114,7 @@ const Foo = () => {
 
 ## Elements method (when styling)
   - ```element.type```- type of element (string)
-  - ```element.style.set()```- set overriding all prev styles (also ignoring inline styles). 
+  - ```element.style.set()```- set overriding all prev styles (also ignoring inline styles)
   - ```element.style.pushBefore()```- push styles before already setted styles. (less important)
   - ```element.style.pushAfter()```- push styles after already setted styles. (more important)
   - ```element.id```- id setted on props (string)
