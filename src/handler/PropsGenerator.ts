@@ -14,7 +14,6 @@ export const generateProps = (
     children: childrenToCallback(finalProps.children),
   } as Element);
 
-  // console.log("finalProps", finalProps);
   return finalProps;
 };
 
