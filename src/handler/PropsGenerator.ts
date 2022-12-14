@@ -59,9 +59,9 @@ const recursiveMap = (
         }
       },
     },
-    type: obj.type?.displayName ?? obj.type?.name ?? undefined,
+    type: obj.type?.displayName || obj.type?.name || undefined,
     children: childrenToCallback([
-      ...(obj.children ?? obj.props?.children ?? {}),
+      ...(obj.children || obj.props?.children || {}),
     ]),
   };
 
