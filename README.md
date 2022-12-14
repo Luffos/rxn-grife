@@ -97,3 +97,28 @@ const Foo = () => {
 };
 
 ```
+
+## Components (allowing id and className props)
+- ScrollView
+- Text
+- View
+
+``OBS: You still can use default React Native's components, these just add extra pseudo-props.``
+
+## makeStyle Methods
+  - ``makeStyle``
+  creates style group without an base root element (needs to use ```<With ...genatedStyle>{...}</With>```). NOT WORKING YET
+
+  - ``makeStyleFrom``
+  Use any React Native's component as base (similar to styled-components's styled function)
+
+## Elements method (when styling)
+  - ```element.type```- type of element (string)
+  - ```element.style.set()```- set overriding all prev styles. (void)
+  - ```element.style.pushBefore()```- push styles before already setted styles. (less important)
+  - ```element.style.pushAfter()```- push styles after already setted styles. (more important)
+  - ```element.id```- id setted on props (string)
+  - ```element.className```- className setted on props (string)
+
+
+### BETTER DOCS SOON...
