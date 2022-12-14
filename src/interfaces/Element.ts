@@ -14,6 +14,8 @@ export interface Element {
      * Set style for element (x, y) or object ({x1: y1, x2: y2})
      */
     set: (style: ViewStyle | TextStyle | ImageStyle) => void;
+    pushBefore: (style: ViewStyle | TextStyle | ImageStyle) => void;
+    pushAfter: (style: ViewStyle | TextStyle | ImageStyle) => void;
   };
   id?: string;
   className?: string;

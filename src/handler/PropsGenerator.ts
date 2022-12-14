@@ -50,13 +50,33 @@ const recursiveMap = (
 
   (obj.___ as Element) = {
     style: {
-      set: (style) => {
+      pushBefore: (style) => {
         if (root) {
           obj.style = { ...style, ...(obj.style ?? []) };
         } else {
           obj.props = {
             ...obj.props,
             style: { ...style, ...(obj.props.style ?? []) },
+          };
+        }
+      },
+      pushAfter: (style) => {
+        if (root) {
+          obj.style = { ...(obj.style ?? []), ...style };
+        } else {
+          obj.props = {
+            ...obj.props,
+            style: { ...(obj.props.style ?? []), ...style },
+          };
+        }
+      },
+      set: (style) => {
+        if (root) {
+          obj.style = { ...style };
+        } else {
+          obj.props = {
+            ...obj.props,
+            style: { ...style },
           };
         }
       },
