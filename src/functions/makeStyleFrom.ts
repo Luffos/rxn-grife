@@ -1,7 +1,7 @@
 import React from "react";
 import type { Element, ElementCallback } from "../interfaces/Element";
 import { ScrollView, View, Text } from "../index";
-import { Styled } from "src/handler/Styled";
+import { Styled } from "../handler/Styled";
 
 interface _MakeStyleFrom {
   (baseElement: any): React.ExoticComponent<{

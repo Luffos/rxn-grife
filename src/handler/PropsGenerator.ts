@@ -1,5 +1,5 @@
 import childrenToCallback from "../helpers/childrenToCallback";
-import { ElementCallback, Element } from "src/interfaces/Element";
+import { ElementCallback, Element } from "../interfaces/Element";
 
 export const generateProps = (
   WrapperElement: any,
