@@ -107,7 +107,7 @@ const Foo = () => {
 - Text
 - View
 
-``OBS: You still can use default React Native's components, these just add extra pseudo-props.``
+``OBS: You still can use default React Native's components, these just add extra pseudo-props (declaration only of id and className).``
 
 ## makeStyle Methods
   - ``makeStyle``
@@ -125,4 +125,18 @@ const Foo = () => {
   - ```element.className```- className setted on props (string)
 
 
-### BETTER DOCS SOON...
+BETTER DOCS SOON...
+
+## FAQ
+
+Why RXN Grife?
+> RXN is a acronym for "React x Native" (Libraries aimed at a React Native system targeting Web as well), while Grife is a Brazilian Portuguese word for "designer label".
+
+## Contributors
+
+<a href = "https://github.com/Luffos/rxn-grife/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=Luffos/rxn-grife"/>
+</a>
+
+##  📄 License
+MIT - This module was built with ❤️ by [Luffos](https://github.com/Luffos)<br/>Feel free for modify, edit, copy, fork and share
