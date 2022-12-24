@@ -73,7 +73,11 @@ export const MyView = from.View((el) => {
 ```tsx
 import React, { useCallback } from 'react';
 import { View } from 'react-native';
+
+// Text with extra pseudo-props (just declaration) of id and className
+// while "With" is an unique Grife's component serving as styling wrapper
 import { With as W, Text } from 'rxn-grife';
+
 import { Root, myStyle } from './styles.ts';
 
 const Foo = () => {
