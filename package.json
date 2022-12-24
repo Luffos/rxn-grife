@@ -23,8 +23,8 @@
     "url": "git+https://github.com/Luffos/rxn-grife.git"
   },
   "main": "build/index.js",
-  "types": "build/index.d.ts",
   "source": "src/index",
+  "types": "build/index.d.ts",
   "scripts": {
     "build": "rimraf ./build && tsc --build",
     "prepack": "npm run build"
@@ -36,8 +36,8 @@
   },
   "devDependencies": {
     "@types/react-native": "^0.70.6",
-    "typescript": "^4.9.4",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.4"
   },
   "peerDependencies": {
     "react": "^18.2.0",
