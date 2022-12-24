@@ -129,7 +129,7 @@ BETTER DOCS SOON...
 
 ## FAQ
 
-Why RXN Grife?
+Why RXN Grife as a name?
 > RXN is a acronym for "React x Native" (Libraries aimed at a React Native system targeting Web as well), while Grife is a Brazilian Portuguese word for "designer label".
 
 ## Contributors
