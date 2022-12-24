@@ -23,6 +23,7 @@
     "url": "git+https://github.com/Luffos/rxn-grife.git"
   },
   "main": "build/index.js",
+  "types": "build/index.d.ts",
   "source": "src/index",
   "scripts": {
     "build": "rimraf ./build && tsc --build",
