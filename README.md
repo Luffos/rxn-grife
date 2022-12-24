@@ -29,6 +29,7 @@ yarn add rxn-grife
 
 ## Example
 
+- [Expo Snack Example ☁️](https://snack.expo.dev/@runtothedoor/rxn-grife-example)
 - [CodeSandbox Example ☁️](https://codesandbox.io/s/rxn-grife-example-react-native-web-46pfld?file=/src/styles.ts)
 
 ## Usage 
