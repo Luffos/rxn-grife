@@ -4,7 +4,7 @@
     "declaration": true,
     "target": "es6",
     "allowUnreachableCode": false,
-    "jsx": "preserve",
+    "jsx": "react",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
