@@ -1,6 +1,6 @@
 {
   "name": "rxn-grife",
-  "version": "0.0.29",
+  "version": "0.0.30",
   "description": "🎀 Programmatic Styling Library for React, React Native and Expo.",
   "keywords": [
     "react",
@@ -25,6 +25,9 @@
   "main": "build/index.js",
   "source": "src/index",
   "types": "build/index.d.ts",
+  "files": [
+    "build"
+  ],
   "scripts": {
     "build": "rimraf ./build && tsc --build",
     "prepack": "npm run build"
