@@ -12,7 +12,7 @@ interface _MakeStyleFrom {
   ScrollView(callback: ElementCallback): typeof Text;
 }
 
-const makeStyleFrom = (baseElement: any) => {
+const makeStyleFrom = (baseElement: React.ReactElement) => {
   console.error(
     "makeStyleFrom(?) Not implemented yet. Please, use makeStyleFrom.? instead. (ScrollView | View | Text)"
   );
