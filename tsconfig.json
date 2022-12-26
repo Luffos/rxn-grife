@@ -2,6 +2,7 @@
   "compilerOptions": {
     "outDir": "build",
     "declaration": true,
+    "useDefineForClassFields": true,
     "target": "es6",
     "allowUnreachableCode": false,
     "jsx": "react",
