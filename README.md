@@ -50,7 +50,7 @@ export const Root = from.View((el) => {
 
 export const myStyle = makeStyle((el) => {
     el.children.map((c) => {
-      c.recursive.style.set({color: 'white'});
+      c.style.recursive.set({color: 'white'});
 
       if (c.type == 'View') {
         c.style.set({
