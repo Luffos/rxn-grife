@@ -120,11 +120,11 @@ const Foo = () => {
 
 ## Elements method (when styling)
   - ```element.type```- type of element (string)
-  - ```element.style.set()```- set overriding all prev styles (also ignoring inline styles)
-  - ```element.style.pushBefore()```- push styles before already setted styles. (less important)
-  - ```element.style.pushAfter()```- push styles after already setted styles. (more important)
-  - ```element.id```- id setted on props (string)
-  - ```element.className```- className setted on props (string)
+  - ```element.style.set()```- set styles (overwriting) for element (also ignoring inline styles)
+  - ```element.style.pushBefore()```- push styles for element before already defined styles (less important)
+  - ```element.style.pushAfter()```- push styles for element after already defined styles (more important)
+  - ```element.id```- id defined on props (string)
+  - ```element.className```- className defined on props (string)
 
 
 BETTER DOCS SOON...
