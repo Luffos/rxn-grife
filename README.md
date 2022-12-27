@@ -119,12 +119,12 @@ const Foo = () => {
   Use any React Native's component as base (similar to styled-components's styled function)
 
 ## Elements method (when styling)
-  - ```element.type```- type of element (string)
+  - ```element.type```- element's type (displayName or name)
   - ```element.style.set()```- set styles (overwriting) for element (also ignoring inline styles)
   - ```element.style.pushBefore()```- push styles for element before already defined styles (less important)
   - ```element.style.pushAfter()```- push styles for element after already defined styles (more important)
-  - ```element.id```- id defined on props (string)
-  - ```element.className```- className defined on props (string)
+  - ```element.id```- id defined on props 
+  - ```element.className```- className defined on props
 
 
 BETTER DOCS SOON...
