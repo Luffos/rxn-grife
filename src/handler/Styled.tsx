@@ -6,7 +6,6 @@ import { generateProps } from "./PropsGenerator";
 export function Styled<T>(
   WrapperElement: any,
   callback: ElementCallback,
-  overwritingProps?: any
 ) {
   return class Styled extends React.Component {
     constructor(props: {} | Readonly<{}> | any) {
@@ -18,7 +17,7 @@ export function Styled<T>(
         <WrapperElement
           {...generateProps(
             WrapperElement,
-            overwritingProps ?? this.props,
+            this.props,
             callback
           )}
         />
