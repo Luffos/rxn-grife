@@ -3,8 +3,12 @@ import React from "react";
 import type { ElementCallback } from "../interfaces/Element";
 import { generateProps } from "./PropsGenerator";
 
-export const Styled = (WrapperElement: any, callback: ElementCallback) =>
-  class Styled extends React.Component {
+export function Styled<T>(
+  WrapperElement: any,
+  callback: ElementCallback,
+  overwritingProps?: any
+) {
+  return class Styled extends React.Component {
     constructor(props: {} | Readonly<{}> | any) {
       super(props);
     }
@@ -12,8 +16,13 @@ export const Styled = (WrapperElement: any, callback: ElementCallback) =>
     render(): React.ReactNode {
       return (
         <WrapperElement
-          {...generateProps(WrapperElement, this.props, callback)}
+          {...generateProps(
+            WrapperElement,
+            overwritingProps ?? this.props,
+            callback
+          )}
         />
       );
     }
-  };
+  } as T;
+}
