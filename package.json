@@ -23,6 +23,7 @@
     "url": "git+https://github.com/Luffos/rxn-grife.git"
   },
   "license": "MIT",
+  "author": "Luffos",
   "main": "dist/index.js",
   "source": "src/index",
   "types": "dist/index.d.ts",
