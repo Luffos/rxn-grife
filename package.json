@@ -22,14 +22,14 @@
     "type": "git",
     "url": "git+https://github.com/Luffos/rxn-grife.git"
   },
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "source": "src/index",
-  "types": "build/index.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
-    "build"
+    "dist"
   ],
   "scripts": {
-    "build": "rimraf ./build && tsc --build",
+    "build": "rimraf ./dist && tsc --build",
     "prepack": "npm run build"
   },
   "dependencies": {
