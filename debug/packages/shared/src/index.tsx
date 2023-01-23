@@ -1,33 +1,28 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react-native/no-inline-styles */
-import React, { useCallback, useEffect, useState } from 'react';
-import { StatusBar, View } from 'react-native';
-import { MyText, MyText2 } from './styles';
-import { Text } from 'rxn-grife';
+import * as React from "react";
+import { SafeAreaView } from "react-native";
 
-const App = () => {
+// Text with extra pseudo-props (just declaration) of id and className
+import { Text } from "rxn-grife";
+import { MyText, MyRainbowText } from "./styles";
+
+function App() {
+  // PROOF OF CONCEPT, DO NOT USE IN PRODUCTION! ⚠️
+
   return (
-    <View
-      style={{
-        position: 'absolute',
-        width: '100%',
-        height: '100%',
-        backgroundColor: 'gray',
-        padding: 5,
-      }}
-    >
-      <MyText>Hello, i'm MyText</MyText>
-      <MyText2 className="po" style={{ fontSize: 21 }}>
-        Hello i'm myText2
-        <Text id="textA">
-          A
-          <Text>
-            B <Text>C</Text>
-          </Text>
+    <SafeAreaView>
+      <MyText>
+        Hello there{" "}
+        <Text style={{ color: "green" }} className="test">
+          How are you? <Text> : )</Text>
         </Text>
-      </MyText2>
-    </View>
+      </MyText>
+
+      <MyRainbowText style={{ fontWeight: "900" }}>
+        DO YOU BELIEVE IN MAGIC
+        <Text style={{ color: "black", fontSize: 50 }}>?</Text>
+      </MyRainbowText>
+    </SafeAreaView>
   );
-};
+}
 
 export default App;
